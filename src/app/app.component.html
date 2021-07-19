@@ -1,0 +1,82 @@
+<button (click)="topFunction()" id="myBtn" class="boton" title="Go to top">
+  <img src="../assets/images/logo_adaptado.png" width="70px" height="70px" alt="">
+  <p style="font-size: .2em;">Back to top</p>
+</button>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/images/logo_adaptado.png" alt="" width="100" height="95" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span>   
+          <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i>
+
+      </span>
+      </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav menuPrincipal" style="align-items: center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fullstack">Programación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#web">Maquetación web</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#grafico">Diseño Gráfico</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav social">
+            <li>
+              <a class="nav-link redes linkedin" aria-current="page" href="https://www.linkedin.com/in/david-del-pozo/"></a>
+            </li>
+            <li >
+              <a class="nav-link redes correo" aria-current="page" href="mailto:daviddelpozocalderon@gmail.com?Subject=Porfolio"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link redes github" aria-current="page" href="https://github.com/Daviddpc1992"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link redes behance" aria-current="page" href="https://www.behance.net/daviddelpozo"></a>
+            </li>
+  
+  
+          </ul>
+        </div>
+ 
+    </div>
+  </nav>
+<router-outlet></router-outlet>
+
+<footer data-aos="fade-up"
+data-aos-anchor-placement="center-bottom"
+data-aos-duration="3000">
+<hr>
+<div>
+  <ul class="navbar-nav social">
+    <li>
+      <a class="nav-link redes linkedin" aria-current="page" href="https://www.linkedin.com/in/david-del-pozo/"></a>
+    </li>
+    <li >
+      <a class="nav-link redes correo" aria-current="page" href="mailto:daviddelpozocalderon@gmail.com?Subject=Porfolio"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link redes github" aria-current="page" href="https://github.com/Daviddpc1992"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link redes behance" aria-current="page" href="https://www.behance.net/daviddelpozo"></a>
+    </li>
+  </ul>
+  <p>© 2021 David del Pozo</p>
+</div>
+</footer>
+
+</body>

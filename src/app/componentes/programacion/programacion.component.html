@@ -1,0 +1,43 @@
+<section>
+    <div class="container" class="container" data-aos="fade-left" data-aos-duration="3000">
+        <div class="row">
+            <div class="col-12 col-md-6 about" style="text-align:end;">
+            </div>
+            <div class="col-12 col-md-6 about" style="text-align:end;">
+                <h2>FullStack Jr.</h2>
+                <div class="linea" id="crece"></div>
+            </div>
+            <div class="col-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                    <div class="col" *ngFor="let programacion of programaciones">
+                        <div class="card h-100 overlay-slide img mb-3"  >
+                       <img [src]="programacion.imagen"[ngClass]="{'defecto': programacion.imagen === ''}"  alt="">
+                         
+                            <div class="card-body">
+                                <a href="{{programacion.texto}}" target="_blank" ><h5 class="card-title">{{programacion.titulo}}</h5></a>
+                                <span class="imagenmini">
+                                    <img class="recurso"
+                                    [src]="programacion.recursos" [ngClass]="{'ocultar': programacion.recursos === ''}" 
+                                    alt="{{programacion.titulo}}">
+                                    <img class="recurso"
+                                    [src]="programacion.recursos2"[ngClass]="{'ocultar': programacion.recursos2 === ''}" 
+                                    alt="{{programacion.titulo}}">
+                                    <img class="recurso"
+                                    [src]="programacion.recursos3" [ngClass]="{'ocultar': programacion.recursos3 === ''}"
+                                    alt="{{programacion.titulo}}">
+                                </span>
+                            </div>
+                        </div>
+
+           
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
