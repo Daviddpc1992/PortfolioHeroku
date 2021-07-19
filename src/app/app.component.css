@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'ocr_a_extendedregular';
+    src: url('../assets/tipografias/ocr_a_extended_regular.woff2') format('woff2'),
+         url('../assets/tipografias/ocr_a_extended_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+#navbarNav{
+ 
+    justify-content: flex-end!important;
+    font-family:'ocr_a_extendedregular';
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.311); 
+    border-color: rgba(0, 0, 0, 0); 
+}
+.navbar-light .navbar-toggler:focus {
+
+-moz-transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg); 
+}
+.navbar-toggler:focus {
+
+    outline: 0;
+    box-shadow:none;
+}
+#navbarNav .menuPrincipal li a{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+}
+
+#navbarNav .menuPrincipal li a:hover, #navbarNav .menuPrincipal li a:focus {
+    background-size: 100% 2px;
+}
+.social{
+display: flex!important;
+flex-direction: row!important;
+justify-content: center;
+ align-items: center;
+}
+.social li{
+    margin: 2%;
+}
+.social li .redes {
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all ease 1s;
+}
+.social li .linkedin {
+    background-image: url(../assets/images/linkedin-50-h.png);
+ 
+}
+.social li .linkedin:hover {
+    background-image: url(../assets/images/linkedin-50.png);
+}
+.social li .correo {
+    background-image: url(../assets/images/correo-48-h.png);
+ 
+}
+.social li .correo:hover {
+    background-image: url(../assets/images/correo-48.png);
+}
+.social li .github {
+    background-image: url(../assets/images/github-50-h.png);
+   
+}
+.social li .github:hover {
+    background-image: url(../assets/images/github-50.png);
+}
+.social li .behance {
+    background-image: url(../assets/images/behance-50-h.png);
+   
+}
+.social li .behance:hover {
+    background-image: url(../assets/images/behance-50.png);
+}
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    color: rgb(0, 0, 0);
+    cursor: pointer; 
+    font-size: 40px; 
+    transition: all ease .5s;
+    width: 90px;
+    height: 90px;
+    border: 3px solid rgb(0, 0, 0);
+ 
+
+}
+
+#myBtn:hover {
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    background-color: #000000; 
+} 
+/* Efecto bg */
+
+footer p {
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-family:'ocr_a_extendedregular';
+}
+footer hr{
+    width: 50%;
+    margin: auto;
+}
+

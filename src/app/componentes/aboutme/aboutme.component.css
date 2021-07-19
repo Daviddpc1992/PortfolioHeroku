@@ -1,0 +1,166 @@
+
+@font-face {
+    font-family:'ocr_a_extendedregular';
+    src: url('/Portfolio/src/assets/tipografias/ocr_a_extended_regular.woff2') format('woff2'),
+         url('/Portfolio/src/assets/tipografias/ocr_a_extended_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.about{
+    padding: 7%;
+}
+h2{
+    font-family: 'ocr_a_extendedregular';
+    font-size: 7em;
+    color: #e74c3c
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+
+}
+
+
+.linea {
+    width: 100px;
+    height: 5px;
+    background-color: #000000;
+    -webkit-transition: width .5s, background-color 1s;
+    -moz-transition: width .5s, background-color 1s;
+    -o-transition: width .5s, background-color 1s;
+    transition: width .5s, background-color 1s;
+
+}
+
+#crece {
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+.container:hover .linea {
+    width: 350px;
+
+}
+.accordion{
+  margin: 10% 0px;
+}
+
+.accordion, .accordion-item, .accordion-header{
+  border:none!important;
+  background-color: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color:rgb(0, 0, 0)4; 
+  background-color: #e74c3c; 
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none!important;
+  outline: 0;
+  box-shadow: none!important;
+} 
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff!important;
+  background-color: none!important;
+  box-shadow: none!important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+  background-image: url(../../../assets/images/minus.svg);
+}
+
+.accordion-button::after {
+  background-image: url(../../../assets/images/icons8-plus.svg);
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}
+
+/* Efecto btn */
+.boton {
+    width: 150px;
+    height: 50px;
+    border: 1px solid rgb(0, 0, 0);
+   
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+  }
+  
+  .boton::before, .boton::after {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    z-index: -1;
+    transition: 1s;
+    content: '';
+  }
+  
+  .boton::before {
+    height: 50px;
+    width: 130px;
+  }
+  
+  .boton::after {
+    width: 150px;
+    height: 30px;
+  }
+/*   
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+   */
+  .boton:hover::before {
+    width: 0px;
+    background: #fff;
+  }
+  
+  .boton:hover::after {
+    height: 0px;
+    background: #fff;
+  }
+  
+  .boton:hover {
+    background: #fff;
+  }
+
+  .doble{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+  }
+  .doble img{
+    width: 50px;
+    height: 50px;
+  }
+  @media (max-width: 600px) {
+    h2{
+     
+      font-size: 3em;
+  
+    }
+  }

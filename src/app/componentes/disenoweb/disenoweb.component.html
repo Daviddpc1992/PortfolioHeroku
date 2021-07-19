@@ -1,0 +1,41 @@
+<section>
+    <div class="container" class="container" data-aos="fade-right" data-aos-duration="3000">
+        <div class="row">
+            <div class="col-12 col-md-6 about">
+                <h2>Maquetación Web</h2>
+                <div class="linea" id="crece"></div>
+            </div>
+            <div class="col-12 col-md-6 about">
+            </div>
+            <div class="col-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                
+                    <div class="col" *ngFor="let web of webs">
+                        <div class="card h-100 overlay-slide img mb-3 ">
+                       <img [src]="web.imagen"[ngClass]="{'defecto': web.imagen === ''}"  alt="">
+                         
+                            <div class="card-body">
+                                <a href="{{web.texto}}" target="_blank" ><h5 class="card-title">{{web.titulo}}</h5></a>
+                                <span class="imagenmini">
+                                    <img class="recurso"
+                                    [src]="web.recursos" [ngClass]="{'ocultar': web.recursos === ''}" 
+                                    alt="{{web.titulo}}">
+                                    <img class="recurso"
+                                    [src]="web.recursos2"[ngClass]="{'ocultar': web.recursos2 === ''}" 
+                                    alt="{{web.titulo}}">
+                                    <img class="recurso"
+                                    [src]="web.recursos3" [ngClass]="{'ocultar': web.recursos3 === ''}"
+                                    alt="{{web.titulo}}">
+                                </span>
+                            </div>
+                        </div>
+
+           
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
