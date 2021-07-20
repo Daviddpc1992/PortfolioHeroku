@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
-    "start:heroku": "node dist/server",
-    "postinstall": "ng build --prod",
+    "start": "node server.js",
+    "postinstall": "ng build --output-path your-application-name --aot --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
