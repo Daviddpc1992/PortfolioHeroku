@@ -11,5 +11,3 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/portfolio/index.html'));
 });
 
-// default Heroku port
-app.listen(process.env.PORT || 5000);

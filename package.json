@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
     "start:heroku": "node dist/server",
     "postinstall": "ng build --prod",
-    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -13,11 +13,7 @@
     "heroku-postbuild": "ng build --aot --prod"
 
   },
-  "engines": {
-    "node": "14.17.0",
-    "npm": "7.18.1"
-  },
-
+  
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.1.0",
@@ -40,7 +36,7 @@
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
-  
+
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.0",
     "@angular/cli": "~12.1.0",
