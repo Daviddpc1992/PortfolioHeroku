@@ -11,9 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "heroku-postbuild": "ng build --aot --prod"
-
   },
-  
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.1.0",
@@ -33,10 +31,10 @@
     "ngx-drag-scroll": "^12.0.0-beta.1",
     "path": "^0.12.7",
     "rxjs": "~6.6.0",
+    "serve": "^12.0.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
-
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.0",
     "@angular/cli": "~12.1.0",
