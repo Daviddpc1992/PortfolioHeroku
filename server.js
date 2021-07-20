@@ -2,6 +2,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+const server = http.createServer(process.env.PORT || 3000);
 
 // Serve static files
 app.use(express.static(__dirname + '/dist/portfolio'));
@@ -10,7 +11,3 @@ app.use(express.static(__dirname + '/dist/portfolio'));
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/portfolio/index.html'));
 });
-
-http.listen(5000, function(){
-    console.log('listening on *:5000');
-  });
