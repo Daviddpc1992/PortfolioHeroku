@@ -1,4 +1,3 @@
-
 @font-face {
     font-family:'ocr_a_extendedregular';
     src: url('/Portfolio/src/assets/tipografias/ocr_a_extended_regular.woff2') format('woff2'),
@@ -7,23 +6,19 @@
     font-style: normal;
 
 }
-
-
 .about{
-    padding: 7%;
+    padding: 8%;
+    margin-top: 5%;
 }
 h2{
     font-family: 'ocr_a_extendedregular';
-    font-size: 7em;
+    font-size: 5em;
     color: #e74c3c
 }
 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
-
 }
-
-
 .linea {
     width: 100px;
     height: 5px;
@@ -90,6 +85,11 @@ p{
   transition: transform .2s ease-in-out;
 }
 
+.arrowDown {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply; 
+ }
+ 
 /* Efecto btn */
 .boton {
     width: 150px;
@@ -105,6 +105,10 @@ p{
     position: relative;
     z-index: 0;
     transition: 1s;
+  }
+  .boton a{
+    text-decoration: none;
+    color: black;
   }
   
   .boton::before, .boton::after {
@@ -124,16 +128,8 @@ p{
     width: 150px;
     height: 30px;
   }
-/*   
-  .noselect {
-    -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-  }
-   */
+
+   *
   .boton:hover::before {
     width: 0px;
     background: #fff;
@@ -164,3 +160,11 @@ p{
   
     }
   }
+  @media (max-width: 768px) {
+    h2{
+     
+      font-size: 4em;
+  
+    }
+  }
+  

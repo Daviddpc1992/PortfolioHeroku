@@ -2,14 +2,14 @@
 export interface Grafico{
     id: number,
     titulo: string,
-    miniatura: string,
+    sub: string,
     imagen: string,
-    imagen2: string,
+    texto: string,
     imagen3: string,
     recursos: string,
     recursos2: string,
     recursos3: string,
-    texto: string,
+    url: string,
 
   }
   

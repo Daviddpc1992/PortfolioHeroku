@@ -8,8 +8,8 @@
   }
   
 #navbarNav{
- 
-    justify-content: flex-end!important;
+
+    justify-content: space-around!important;
     font-family:'ocr_a_extendedregular';
 }
 
@@ -37,7 +37,7 @@ transform: rotate(90deg);
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
-
+    display: block;
 }
 
 #navbarNav .menuPrincipal li a:hover, #navbarNav .menuPrincipal li a:focus {
@@ -100,8 +100,8 @@ justify-content: center;
     cursor: pointer; 
     font-size: 40px; 
     transition: all ease .5s;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border: 3px solid rgb(0, 0, 0);
  
 

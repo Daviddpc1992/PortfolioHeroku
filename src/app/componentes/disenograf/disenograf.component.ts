@@ -24,6 +24,23 @@ export class DisenografComponent implements OnInit {
     this.graficos = this.graficoService.getAll()
     AOS.init();
   };
+
+  onChange($event) {
+    if ($event.target.value === 'todos') {
+
+      this.graficos = this.graficoService.getAll();
+
+
+    } else {
+      setTimeout(() => {
+        this.graficos = this.graficoService.getByItem($event.target.value);
+
+      }, 100);
+    
+    }
+
+
+  }
 }
     
   
