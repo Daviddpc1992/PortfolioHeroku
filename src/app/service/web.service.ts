@@ -14,5 +14,12 @@ export class WebSkipTestService {
   getAll(): Web[] {
     return WEB;
  }
+ getByItem(pItem: string): Web[] {
+  return [...new Set(WEB.filter((proyecto) => { return proyecto.sub === pItem})
+  )]
+}
+ getById(pId: number): Web{
+  return WEB.find(proyecto => proyecto.id == pId)
+}
 
 }

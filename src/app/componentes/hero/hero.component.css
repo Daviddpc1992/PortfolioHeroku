@@ -1,6 +1,5 @@
 
 h1{
- margin-top: 10%;
     color: #000000;
     font-size: 5em!important;
     font-family: 'ocr_a_extendedregular'!important;
@@ -9,16 +8,21 @@ h1{
 	filter: brightness(1.1);
 	mix-blend-mode: multiply;
 }
+.center, .center2 {
+	margin: auto!important;
+	text-align: center!important;
+
+}
   .Iam {
     margin-top: 0%;
-    font: normal 70px/80px Montserrat, sans-serif;
+    font: normal 65px/75px Montserrat, sans-serif;
     color: #999;
 
 
   }
 
   .Iam p {
-    height: 70px;
+    height: 65px;
     float: left;
 
   }
@@ -26,7 +30,7 @@ h1{
     float: left;
     overflow: hidden;
     position: relative;
-    height: 70px;
+    height: 65px;
   
   }
   .Iam .innerIam {
@@ -34,6 +38,8 @@ h1{
     color: #e74c3c;
     position: relative;
     white-space: nowrap;
+	text-align: center!important;
+	margin: auto!important;
  
   /*animation*/
   -webkit-animation:move 5s;
@@ -105,6 +111,9 @@ h1{
 
 	 animation: gradient-fade-alt 6s ease-in-out 3s infinite alternate;
 }
+.textMob{
+	display: none;
+}
  .main__text-wrapper {
 	 position: relative;
 	 padding: 2em;
@@ -122,7 +131,6 @@ h1{
 	 height: 13em;
 	 opacity: 0.7;
 	 border-radius: 13em;
-
 	 animation: rotation 7s linear infinite;
 }
  .main__text-wrapper:after {
@@ -131,7 +139,6 @@ h1{
 	 width: 20em;
 	 height: 20em;
 	 border-radius: 20em;
-
 	 animation: rotation 7s linear infinite;
 }
  .arrow {
@@ -263,9 +270,24 @@ h1{
 @media (max-width: 600px) {
 	h1{
 	 
-	  font-size: 1em!important
+	  font-size: 3em!important;
+
   
 	}
+	.center2{
+		text-align: left!important;
+	}
+   .innerIam{
+	   display: none!important;
+   }
+   .textMob{
+	display: block;
+	font-size: 1em!important;
+	color: #e74c3c;
+	margin: 0%;
+	margin-bottom: -20%;
+}
+	
   }
   @media (max-width: 768px) {
 	h2{
@@ -273,4 +295,8 @@ h1{
 	  font-size: 2em;
   
 	}
+	.innerIam{
+		display: inline-block;
+	}
+	
   }

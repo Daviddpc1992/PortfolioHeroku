@@ -15,4 +15,12 @@ export class GraficoService {
     return GRAFICO;
  }
 
+ getByItem(pItem: string): Grafico[] {
+  return [...new Set(GRAFICO.filter((proyecto) => { return proyecto.sub === pItem})
+  )]
+}
+
+  getById(pId: number): Grafico{
+    return GRAFICO.find(proyecto => proyecto.id == pId)
+  }
 }
