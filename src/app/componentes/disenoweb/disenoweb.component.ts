@@ -9,7 +9,7 @@ import { WebSkipTestService } from 'src/app/service/web.service';
   styleUrls: ['./disenoweb.component.css']
 })
 export class DisenowebComponent implements OnInit {
-  show: boolean = true;
+  down: boolean = false;
 
   webs: Web[] = []
 
@@ -20,8 +20,32 @@ export class DisenowebComponent implements OnInit {
 
   ngOnInit(): void {
     this.webs = this.websservice.getAll()
+ 
       };
     
-  
+      onChange($event) {
+        if ($event.target.value === 'todos') {
+    
+          this.webs = this.websservice.getAll();
+    
+    
+        } else {
+          setTimeout(() => {
+            this.webs = this.websservice.getByItem($event.target.value);
+    
+          }, 100);
+        
+        }
+    
+    
+      }
+      goDown($event) {
+        if ($event) {
+    
+          setTimeout(() => {
+          this.down = true;
+        }, 200);
+        }
+      }
 
 }

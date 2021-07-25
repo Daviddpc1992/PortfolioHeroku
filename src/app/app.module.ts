@@ -8,8 +8,16 @@ import { AboutmeComponent } from './componentes/aboutme/aboutme.component';
 import { DisenografComponent } from './componentes/disenograf/disenograf.component';
 import { DisenowebComponent } from './componentes/disenoweb/disenoweb.component';
 import { ProgramacionComponent } from './componentes/programacion/programacion.component';
-import { CarrouselComponent } from './componentes/carrousel/carrousel.component';
+import { DetalleComponent } from './componentes/detalle/detalle.component';
 import { DetalleGraficoComponent } from './componentes/detalle-grafico/detalle-grafico.component';
+import { DetalleWebComponent } from './componentes/detalle-web/detalle-web.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCheckboxModule} from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatIconModule} from '@angular/material/Icon';
+import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -20,14 +28,22 @@ import { DetalleGraficoComponent } from './componentes/detalle-grafico/detalle-g
     DisenografComponent,
     DisenowebComponent,
     ProgramacionComponent,
-    CarrouselComponent,
+    DetalleComponent,
     DetalleGraficoComponent,
-  
+    DetalleWebComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DragScrollModule,
+    BrowserAnimationsModule,
+    MatChipsModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatCheckboxModule
 
   ],
   providers: [],

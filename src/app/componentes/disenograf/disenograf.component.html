@@ -1,11 +1,18 @@
 <section>
-    <div class="container" data-aos="fade-left" data-aos-duration="3000">
+    <div class="container" data-aos="fade-up" data-aos-duration="3000">
         <div class="row">
             <div class="col-12 col-md-6 about" style="text-align:end;">
             </div>
             <div class="col-12 col-md-6 about" style="text-align:end;">
                 <h2>Diseño gráfico</h2>
                 <div class="linea" id="crece"></div>
+                <select class="form-select mt-3" aria-label="Default select example" (change)="onChange($event)"
+               >
+                <option value="todos">Todos</option>
+                <option value="Photoshop">Photoshop</option>
+                <option value="Illustrator">Illustrator</option>
+                <option value="InDesing">InDesing</option>
+            </select>
             </div>
             <div class="col-12">
                 <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
@@ -14,7 +21,7 @@
                        <img [src]="grafico.imagen"[ngClass]="{'defecto': grafico.imagen === ''}"  alt="">
                          
                             <div class="card-body">
-                                <a href="{{grafico.texto}}" target="_blank" ><h5 class="card-title">{{grafico.titulo}}</h5></a>
+                                <a href="" [routerLink]="['/grafico', grafico.id]"><h5 class="card-title">{{grafico.titulo}}</h5></a>
                                 <span class="imagenmini">
                                     <img class="recurso"
                                     [src]="grafico.recursos" [ngClass]="{'ocultar': grafico.recursos === ''}" 
@@ -37,4 +44,5 @@
             </div>
         </div>
     </div>
+    
 </section>

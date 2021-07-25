@@ -1,9 +1,16 @@
 <section>
-    <div class="container" class="container" data-aos="fade-right" data-aos-duration="3000">
+    <div class="container" class="container" data-aos="fade-up" data-aos-duration="3000">
         <div class="row">
             <div class="col-12 col-md-6 about">
                 <h2>Maquetación Web</h2>
                 <div class="linea" id="crece"></div>
+                <select class="form-select mt-3" aria-label="Default select example" (change)="onChange($event)"
+                (click)="goDown($event)">
+                <option value="todos">Todos</option>
+                <option value="Wordpress">Wordpress</option>
+                <option value="Html & Css">Html & Css</option>
+                <option value="Animate">Animate</option>
+            </select>
             </div>
             <div class="col-12 col-md-6 about">
             </div>
@@ -15,7 +22,7 @@
                        <img [src]="web.imagen"[ngClass]="{'defecto': web.imagen === ''}"  alt="">
                          
                             <div class="card-body">
-                                <a href="{{web.texto}}" target="_blank" ><h5 class="card-title">{{web.titulo}}</h5></a>
+                                <a href=""  [routerLink]="['/web', web.id]" ><h5 class="card-title">{{web.titulo}}</h5></a>
                                 <span class="imagenmini">
                                     <img class="recurso"
                                     [src]="web.recursos" [ngClass]="{'ocultar': web.recursos === ''}" 
@@ -35,6 +42,13 @@
 
                 </div>
 
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="this.down === true">
+        <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <a href="#grafico"><img class="arrowDown" width="50px" src="../../../assets/images/down.gif" /></a>
             </div>
         </div>
     </div>

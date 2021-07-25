@@ -1,0 +1,56 @@
+@import url(../hero/hero.component.css);
+@import url(../programacion/programacion.component.css);
+
+
+section{
+  height: auto;
+  margin: 0% 0% 10vh 0%;
+
+
+}
+.main{
+
+  height: auto;
+}    
+.imagen {
+  border-radius: 7px;
+  width: 100%;
+
+}
+.detalle h1{
+  font-size: 3em!important;
+}
+h2{
+    font-size: 1.5em;
+}
+.card-body{
+  padding: 1rem 0rem!important;
+}
+
+  .arrowback{
+    -moz-transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg);
+filter:brightness(1.1);
+mix-blend-mode: multiply;
+  }
+
+  .back{
+    display:flex;
+    align-items: center;
+    z-index: 10000000;
+    justify-content: flex-start;
+
+  }
+  @media (max-width: 768px) {
+
+    .back{
+      display:flex;
+      align-items: center;
+      z-index: 10000000;
+      justify-content: flex-end;
+  
+    }
+  }

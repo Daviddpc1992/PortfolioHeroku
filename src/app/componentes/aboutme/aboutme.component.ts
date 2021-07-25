@@ -9,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
   
 export class AboutmeComponent implements OnInit {
-
+  down: boolean = false;
+  
   constructor() { }
   
 
@@ -17,7 +18,15 @@ export class AboutmeComponent implements OnInit {
     
   }
   
-  
+  goDown($event) {
+    if ($event) {
+
+      setTimeout(() => {
+      this.down = true;
+    }, 200);
+    }
+  }
+
   
 
 }
