@@ -12,12 +12,7 @@ import { DetalleComponent } from './componentes/detalle/detalle.component';
 import { DetalleGraficoComponent } from './componentes/detalle-grafico/detalle-grafico.component';
 import { DetalleWebComponent } from './componentes/detalle-web/detalle-web.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCheckboxModule} from '@angular/material/checkbox';
-import { MatChipsModule } from '@angular/material/chips';
-import { MatIconModule} from '@angular/material/Icon';
-import { MatToolbarModule} from '@angular/material/toolbar';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatButtonModule} from '@angular/material/button';
+
 
 
 @NgModule({
@@ -37,13 +32,7 @@ import { MatButtonModule} from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     DragScrollModule,
-    BrowserAnimationsModule,
-    MatChipsModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatDividerModule,
-    MatButtonModule,
-    MatCheckboxModule
+    BrowserAnimationsModule
 
   ],
   providers: [],
