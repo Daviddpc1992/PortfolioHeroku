@@ -3,7 +3,7 @@ import { Web } from '../interfaces/web.interface';
 export const WEB: Web[] = [
     {
         id: 5,
-        titulo: 'Animacines web',
+        titulo: 'Animaciones web',
         sub: 'Animate',
         imagen: 'https://i.ibb.co/F66gFGf/animacion.jpg',
         texto: 'Elaboración de diferentes animaciones web y elementos en movimientos creados para posicionarlos como banner en páginas web',
